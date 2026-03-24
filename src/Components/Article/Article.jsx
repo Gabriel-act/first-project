@@ -1,19 +1,18 @@
 import React from "react";
 import "./style.css";
 
+
 export class Article extends React.Component {
   render() {
     return (
       <article id="article">
-        <img src="" alt="" />
+        <img id="images" src={this.props.thumbnail} alt="Error" />
 
         <div className="article-infos">
-          <h2>Desing Dashboards</h2>
-          <h3>NASA</h3>
+          <h2>{this.props.title}</h2>
+          <h3>{this.props.provider}</h3>
 
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta suscipit culpa sit delectus dolorem architecto maxime illum! Dolores unde, aut fuga quia aliquam, nobis sint aspernatur, necessitatibus omnis maiores ab!
-          </p>
+          <p>{this.props.description}</p>
         </div>
       </article>
     )
