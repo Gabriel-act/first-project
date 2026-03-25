@@ -2,12 +2,14 @@ import React from "react"
 import "./Styles/App.css";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Article } from "./Components/Article/Article";
-import { Counter } from "./Components/Counter/Counter";
+
 import nasaImg from "./assets/Images/nasa.jpg"
 import img1 from "./assets/Images/img1.png"
 import img2 from "./assets/Images/img2.webp"
 
 // Um componente em classe, herda a class Component do React e retorna HTML dentro do método render.
+
+// Compontente funcional é uma função que retorna HTML
 
 class App extends React.Component {
   // Método responsável por renderizar o conteúdo HTML do nosso componente.
@@ -15,7 +17,7 @@ class App extends React.Component {
     return (
       <>
         <Navbar />
-        <Counter />
+      
         <section id="articles">
           <Article 
           title="Desing Dashbords"
